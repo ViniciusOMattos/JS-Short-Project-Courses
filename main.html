@@ -6,13 +6,21 @@
 
 <p id = "debug"> </p>
 
-<script>
+<button onclick = "addToList()"> Click Here </button>
 
+<script>
+var itemList = ["Apple","Dog","Rhyno"];
+
+// Add Item Array
+function addToList(){
+    itemList.push("Mamaco")
+    document.getElementById('debug').innerHTML = itemList;
+}
+// calc
 function multp(v1, v2){
     return v1 * v2;
 }
 
-<button onclick="document.getElementById('debug').innerHTML = multp(3,9);">Click Here</button>
 
 </script>
 

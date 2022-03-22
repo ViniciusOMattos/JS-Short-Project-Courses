@@ -1,15 +1,30 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+    <title>Test</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
 <body>
 
-<h2> JavaScript Expressions </h2>
-
-<p id = "debug"> </p>
-
-<button onclick = "addToList()"> Click Here </button>
+    <h2> Jquery Test </h2>
+    <p id = "debug"> example </p>
+    <button id="ishow"> show </button>
+    <button id="ihide"> hide </button>
 
 <script>
+
+
 var itemList = ["Apple","Dog","Rhyno"];
+
+$("#ishow").click(function(){
+    $("p").show();
+});
+
+$("#ihide").click(function(){
+    $("p").hide();
+})
 
 // Add Item Array
 function addToList(){

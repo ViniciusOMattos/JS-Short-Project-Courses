@@ -9,13 +9,21 @@ $(document).ready(function() {
             string += "<table class='table'>";
 
             $.each(data.results, function(index, item){
-                string += "<tr><td><a href='"+item.url+"'>"+item.name+"</td><td><button class='cath-button btn btn-primary'>Cath</button></td></tr>";
-            })
+                string += "<tr><td><a href='"+item.url+"'>"+item.name+"</td><td><button class='hide-button btn btn-primary'>hide</button></td></tr>";
+            });
 
             string += "</table>";
 
             $('#poke-list').html(string);
-        })
+
+            if(status) {
+                $('.hide-button').on('click', function() {
+                    console.log('Button clicked!')
+                    $(this).parent().parent().hide();
+                });
+            }
+        });
+
 
     });
 

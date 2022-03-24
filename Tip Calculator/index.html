@@ -20,9 +20,43 @@
 
             <div>
                 <div>
-                    <label for="">Select tip</label>
+                    <label for="tipInput">Select tip</label>
                     <span id="tipPercent">0%</span>
                 </div>
+                <input type="range" value="0" id="tipInput">
+            </div>
+
+            <div>
+                <span>Tip</span>
+                <span id="tipValue"></span>
+            </div>
+
+            <hr>
+
+            <div>
+                <span>Total</span>
+                <span id="totalWithTip"></span>
+            </div>
+        </section>
+
+
+        <section>
+            <div>
+                <div>
+                    <label for="splitInput">Split</label>
+                    <span id="splitValue">1 person</span>
+                </div>
+                <input type="range" min="1" max="10" value="1" id="splitInput">
+            </div>
+
+            <div>
+                <span>Bill each</span>
+                <span id="billEach"></span>
+            </div>
+
+            <div>
+                <span>Tip each</span>
+                <span id="tipEach"></span>
             </div>
         </section>
     </main>

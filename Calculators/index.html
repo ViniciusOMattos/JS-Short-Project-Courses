@@ -14,12 +14,11 @@
 
 <body>
 
-    <!--HEADER-->
-
-    <!--CALCULATOR-->
+    <!-- Calculator -->
     <main id="container">
         <h1>Tip Calculator</h1>
 
+        <!-- Section 1 -->
         <section>
             <div class="bill">
                 <label for="yourBill">Bill</label>
@@ -46,8 +45,9 @@
                 <span id="totalWithTip"></span>
             </div>
         </section>
+        <!-- End of Section 1 -->
 
-
+        <!-- Section 2-->
         <section>
             <div>
                 <div class="space-between">
@@ -67,12 +67,12 @@
                 <span id="tipEach"></span>
             </div>
         </section>
+        <!-- End of Section 2 -->
     </main>
+    <!-- End of Calculator -->
 
-    <!--FOOTER-->
 
-
-    <!--LOGIC-->
+    <!-- Script -->
     <script>
         function update () {
 
@@ -96,6 +96,7 @@
         let container = document.getElementById('container')
         container.addEventListener('input', update)
     </script>
+    <!-- End of Script-->
 
 </body>
 </html>

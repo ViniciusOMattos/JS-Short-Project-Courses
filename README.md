@@ -1,2 +1,19 @@
-# (maintenance)
-<img src="https://static.wixstatic.com/media/d66770_e819f6719ce743f6b1b4829bb95a6df8~mv2.gif" align="center" height="150" width="250">  
+# :books: Study of Several Themes :books:
+<hr>
+### Study Objective
+
+<div> 
+    <ul>
+        <li>Responsive Websites</li>
+        <li>JavaScript Logic</li>
+    </ul> 
+</div>
+<hr>
+<div> 
+    <h5>(Tools used until now)</h5>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul> 
+</div>

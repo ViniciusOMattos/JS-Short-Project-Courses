@@ -1,6 +1,8 @@
 # :books: Study of Several Themes :books:
+
 <hr>
-### Study Objective
+
+<h3>Study Objective</h3>
 
 <div> 
     <ul>
@@ -8,7 +10,9 @@
         <li>JavaScript Logic</li>
     </ul> 
 </div>
+
 <hr>
+
 <div> 
     <h5>(Tools used until now)</h5>
     <ul>

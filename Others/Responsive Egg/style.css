@@ -135,3 +135,24 @@ html {
     box-shadow: -.2rem -.2rem .2rem #000;
 }
 /* End of Section 2*/
+
+
+/* Section 3 */
+.section-3 {
+    background-color: #333;
+    padding: 5rem 0;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.gallery-img {
+    width: 24vw;
+    height: 15vw;
+    object-fit: contain;
+}
+/* End of Section 3 */

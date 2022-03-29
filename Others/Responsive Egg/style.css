@@ -151,6 +151,11 @@ html {
     margin-top: 10rem;
 }
 
+
+.gallery-link {
+    position: relative;
+    margin: 3rem 1rem;
+}
 .gallery-link::before {
     content: "";
     position: absolute;
@@ -158,16 +163,13 @@ html {
     left: 80%;
     width: 0.2rem;
     height: 0;
-    background-color: #fff;
+    background-color: rgb(140, 180, 231);
+    z-index: 10;
+    transition: 0.5s;
 }
-
 .gallery-link:hover::before {
     height: 80%;
 }
-.gallery-link:hover::after {
-    width: 90%;
-}
-
 .gallery-link::after {
     content: "";
     position: absolute;
@@ -175,12 +177,11 @@ html {
     left: 2rem;
     width: 0;
     height: 0.2rem;
-    background-color: #fff;
+    background-color: rgb(140, 180, 231);
+    transition: 0.5s;
 }
-
-.gallery-link {
-    position: relative;
-    margin: 3rem 1rem;
+.gallery-link:hover::after {
+    width: 90%;
 }
 
 .gallery-img {
@@ -188,10 +189,21 @@ html {
     height: 15vw;
     object-fit: contain;
     background-color: rgb(32, 32, 32);
-    box-shadow: .3rem .3rem .1rem #e92929, 
-    .5rem .5rem .1rem #a2e946, 
-    .7rem .7rem .1rem #297ce9, 
-    .9rem .9rem .1rem #e92999;
+    box-shadow: .3rem .3rem .1rem #3a46e9, 
+    .5rem .5rem .1rem #505ae7, 
+    .7rem .7rem .1rem rgb(61, 136, 235), 
+    .9rem .9rem .1rem rgb(78, 144, 230);
+    transition: all 0.5s;
+}
+
+.gallery-link:hover .gallery-img {
+    box-shadow: 1rem 1rem .1rem #3a46e9, 
+    2rem 2rem .1rem #505ae7, 
+    3rem 3rem .1rem rgb(61, 136, 235), 
+    4rem 4rem .1rem rgb(78, 144, 230);
+    filter: blur(0.5rem);
+    opacity: 0.5;
+    transform: scale(1.1);
 }
 
 .gallery-name {
@@ -205,6 +217,11 @@ html {
     color: #fff;
     width: 0;
     overflow: hidden;
+    transition: 0.3s;
+}
+.gallery-link:hover .gallery-name {
+    width: 100%;
+    transition: 1.5s 0.5s;
 }
 
 .gallery-description {
@@ -219,5 +236,11 @@ html {
     color: #fff;
     opacity: 0;
     visibility: hidden;
+    transition: opacity 0.3s;
+}
+.gallery-link:hover .gallery-description {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 1s 1s;
 }
 /* End of Section 3 */

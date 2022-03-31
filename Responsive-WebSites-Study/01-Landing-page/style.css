@@ -14,15 +14,58 @@ html {
 }
 /* End Common Styles*/
 
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    height: 14rem;
+    background-color: #000;
+    position: fixed;
+    top: 1rem;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0.2rem 0.2rem 0.2rem #000;
+}
+
+.navbar-link {
+    color: #aaa;
+    margin: 0 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: color 0.3s;
+}
+
+.navbar-link {
+    font-size: 7rem;
+}
+
+.navbar-link:hover {
+    color: #fff;
+}
+
+.navbar-link span {
+    font-size: 2.5rem;
+    font-weight: 900;
+    letter-spacing: 0.5rem;
+    margin-top: 0.5rem;
+}
+/* End of Navbar */
+
+
 /* Section 1 */
 .section-1{
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     background-color: #333;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    padding-top: 14rem;
 }
 
 .section-heading {
@@ -36,9 +79,14 @@ html {
 }
 
 .section-1-icons {
-    font-size: 35rem;
-    color: #56a8c9;
-    text-shadow: 0.2rem 0.2rem 0.2rem #000;
+    font-size: 25rem;
+    color: #78868b;
+    text-shadow: 0.4rem 0.4rem 0.4rem #000;
+    transition: 0.2s;
+}
+
+.section-1-icons:hover {
+    text-shadow: 0.8rem 0.8rem 0.8rem #000;
 }
 /* End Section 1 */
 

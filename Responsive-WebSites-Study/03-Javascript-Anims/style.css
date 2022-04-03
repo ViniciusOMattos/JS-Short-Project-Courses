@@ -1,6 +1,6 @@
 html {
     background-color: rgb(87, 78, 78);
-    color: #fff;
+    color: rgb(58, 55, 54);
     font-family: Arial, Helvetica, sans-serif;
 }
 .title {
@@ -22,9 +22,19 @@ html {
 .canvas {
     width: 800px;
     height: 450px;
-    border: 1px solid rgb(88, 78, 78);
+    border: 4px solid rgb(29, 23, 23);
     background-color: rgb(37, 34, 34);
     margin-bottom: 20px;
     overflow: hidden;
     position: relative;
+}
+
+.controls {
+    padding-left: 30%;
+}
+.ani-btn {
+    width: 100px;
+    height: 40px;
+    background-color: rgb(94, 90, 88);
+    cursor: pointer;
 }

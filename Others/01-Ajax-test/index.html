@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ajax calls</title>
+
+    <script>
+
+        function requisitarDados(url){
+            const ajax = new XMLHttpRequest();
+            ajax.onload = function(){
+                document.getElementById("content-id").innerHTML = this.responseText;
+            }
+            ajax.open("GET", url);
+            ajax.send();
+        }
+        
+    </script>
+</head>
+
+<body>
+    <!-- Simple interface -->
+    <nav class="canvas">
+        <div id="page" class="container-1">
+            <p id="content-id" class="content">Click any button</p>
+            <div class="control-panel">
+                <button><a href="#" onclick="requisitarDados('data/page_1.html')">Page 1</a></button>
+                <button><a href="#" onclick="requisitarDados('data/page_2.html')">Page 2</a></button>
+                <button><a href="#" onclick="requisitarDados('data/page_3.html')">Page 3</a></button>
+            </div>
+        </div>
+    </nav>
+    
+</body>
+</html>

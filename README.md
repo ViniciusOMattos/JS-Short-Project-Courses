@@ -19,5 +19,7 @@
         <li>HTML</li>
         <li>CSS</li>
         <li>JavaScript</li>
+        <li>Php</li>
+        <li>mySql</li>
     </ul> 
 </div>

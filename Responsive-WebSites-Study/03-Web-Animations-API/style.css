@@ -1,0 +1,30 @@
+html {
+    background-color: rgb(87, 78, 78);
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.title {
+    padding-left: 30%;
+}
+
+.ani-box {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(83, 43, 49);
+    transform: translate(0px, 200px);
+}
+
+.ani-main {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.canvas {
+    width: 800px;
+    height: 450px;
+    border: 1px solid rgb(88, 78, 78);
+    background-color: rgb(37, 34, 34);
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+}

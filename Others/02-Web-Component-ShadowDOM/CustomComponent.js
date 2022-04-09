@@ -2,8 +2,13 @@ class CustomComponent extends HTMLElement {
     constructor() {
         super()
 
+        this.build()
+    }
+
+
+    build() {
         const shadow = this.attachShadow({mode: 'open'})
-        
+
         shadow.innerHTML = `
         <div class="background">
             <div class="canvas">
@@ -14,7 +19,6 @@ class CustomComponent extends HTMLElement {
         shadow.appendChild(this.styles())
     }
 
-    build() {}
 
     styles(){
         const style = document.createElement('style')

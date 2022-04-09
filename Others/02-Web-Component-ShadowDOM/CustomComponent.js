@@ -1,27 +1,27 @@
 class CustomComponent extends HTMLElement {
     constructor() {
-        super()
+        super();
 
-        this.build()
+        this.build();
     }
 
 
     build() {
-        const shadow = this.attachShadow({mode: 'open'})
+        const shadow = this.attachShadow({mode: 'open'});
 
         shadow.innerHTML = `
         <div class="background">
             <div class="canvas">
                 <p> Hello World </p>
             </div>
-        </div>`
+        </div>`;
 
-        shadow.appendChild(this.styles())
+        shadow.appendChild(this.styles());
     }
 
 
     styles(){
-        const style = document.createElement('style')
+        const style = document.createElement('style');
         style.textContent = `
             .background {
                 width: 30rem;
@@ -43,9 +43,9 @@ class CustomComponent extends HTMLElement {
                 color: #fff;
             }
 
-        `
-        return style
+        `;
+        return style;
     }
 }
 
-customElements.define('custom-component', CustomComponent)
+customElements.define('custom-component', CustomComponent);

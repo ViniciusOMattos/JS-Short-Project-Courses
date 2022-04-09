@@ -6,8 +6,9 @@
 
 <div> 
     <ul>
-        <li>Responsive Websites</li>
-        <li>JavaScript Logic</li>
+        <li>Improve Front and Backend</li>
+        <li>Improve JavaScript</li>
+        <li>Improve CSharp</li>
     </ul> 
 </div>
 
@@ -16,10 +17,9 @@
 <div> 
     <h5>(Tools used until now)</h5>
     <ul>
-        <li>HTML</li>
-        <li>CSS</li>
+        <li>HTML/CSS</li>
         <li>JavaScript</li>
-        <li>Php</li>
+        <li>CSharp</li>
         <li>mySql</li>
     </ul> 
 </div>
